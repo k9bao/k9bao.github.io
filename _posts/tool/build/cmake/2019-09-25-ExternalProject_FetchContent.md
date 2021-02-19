@@ -159,7 +159,7 @@ LOG_DIR      = <STAMP_DIR>
 
 ### 1.3.1. FetchContent说明
 
-+ 此方法是ExternalProject的扩展和优化,将声明与实现分离.而ExternalProject都集成到ExternalProject_Add接口中.
+此方法是ExternalProject的扩展和优化,将声明与实现分离.而ExternalProject都集成到ExternalProject_Add接口中.
 
 #### 1.3.1.1. FetchContent_Declare
 

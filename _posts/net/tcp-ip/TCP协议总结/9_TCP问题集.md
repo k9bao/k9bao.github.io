@@ -14,7 +14,15 @@
 
 详见 TCP-IP/test/SimpleNetwork
 
-## 抓包常见错误
+## 1.6. 实现服务端主动发起连接的例子
+
+## 1.7. 实现同时关闭的例子(含方法)
+
+是否可以通过拔网线来模拟？
+
+## 1.8. `socket.listen(__backlog:int)` 的参数 __backlog 为什么不生效(python3)
+
+## 1.9. 抓包常见错误
 
 - TCP 抓包常见错误
 - TCP out-of-order（tcp有问题）                   #多数是网络拥塞引起的

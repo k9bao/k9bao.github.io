@@ -1,22 +1,23 @@
 Windows Registry Editor Version 5.00
 
 [HKEY_CLASSES_ROOT\Directory\Background\shell\terminal]
-"SubCommands"="win_termianl;terminal_cmder;terminal_mingw64;terminal_powershell;terminal_powershell_admin;Conda_Activate;Conda_Jupyter;cmd"
+"SubCommands"="win_termianl;terminal_mingw64;terminal_powershell;terminal_powershell_admin;Conda_Activate;Conda_Jupyter;cmd"
 "Icon"="powershell.exe"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\win_termianl]
 @="win_termianl"
-"Icon"="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.3.2651.0_x64__8wekyb3d8bbwe\\wt.exe"
+"Icon"="%USERPROFILE%\\AppData\\Local\\terminal\\wt_32.ico"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\win_termianl\command]
-@="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminal_1.3.2651.0_x64__8wekyb3d8bbwe\\wt.exe"
+;@="C:\\Users\\Administrator\\AppData\\Local\\Microsoft\\WindowsApps\\wt.exe"
+@="C:\\Program Files\\WindowsApps\\Microsoft.WindowsTerminalPreview_1.5.3242.0_x64__8wekyb3d8bbwe\\wt.exe"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_mingw64]
 @="Mingw64"
-"Icon"="D:\\msys64\\mingw64.exe"
+"Icon"="mingw64.exe"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_mingw64\command]
-@="D:\\msys64\\msys2_shell.cmd -mingw64 -here"
+@="msys2_shell.cmd -mingw64 -here"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_powershell]
 @="powershell"
@@ -35,12 +36,12 @@ Windows Registry Editor Version 5.00
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_powershell_admin\command]
 @="powershell.exe -command Start-Process powershell -ArgumentList \\\"-noexit\\\",\\\"Set-Location -literalPath '%V'\\\" -Verb runAs"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_cmder]
-@="cmder"
-"Icon"="D:\\software\\cmder\\icons\\cmder.ico"
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_cmder]
+;@="cmder"
+;"Icon"="D:\\software\\cmder\\icons\\cmder.ico"
 
-[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_cmder\command]
-@="D:\\software\\cmder\\Cmder.exe %V"
+;[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\terminal_cmder\command]
+;@="D:\\software\\cmder\\Cmder.exe %V"
 
 [HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\CommandStore\shell\Conda_Activate]
 @="Conda_Activate"
