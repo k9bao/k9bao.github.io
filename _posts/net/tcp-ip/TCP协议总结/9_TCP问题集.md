@@ -33,3 +33,9 @@
 - TCP dup ack（tcp重复应答）
 - TCP keep alive（tcp保持活动）
 - TCP retransmission（tcp 重传）
+
+## SO_REUSEADDR 和 SO_REUSEPORT 区别
+
+## 惊群效应
+
+## net.ipv4字段说明
